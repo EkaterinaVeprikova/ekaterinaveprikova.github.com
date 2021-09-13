@@ -1,25 +1,164 @@
 <!DOCTYPE html>
 
-<!-- комментарий в HTML -->
-
-<!-- в первой строке мы сообщаем браузеру,
-  что это документ HTML5 -->
-
 <html lang="ru">
 
-  <head>
-    <title>Название страницы</title>
-  </head>
+<head>
+    <title>Задание 1</title>
+</head>
 
-  <body>
+<body>
 
-    <ul>
-	 <li><a href="https://kubsu.ru">КубГУ</a></li>
-	</ul>
-	
-  </body>
-  
-  <li> 
+    <h1>
+        Веприкова Екатерина, 21/2.
+    </h1>
+
+    <ol>
+        <!--1-->
+        <li>абсолютная гиперссылка на главную страницу сайта <a href="http://example.com/">example.com</a>;</li>
+        <!--2-->
+        <li>абсолютная гиперссылка на главную страницу сайта <a href="https://example.com/">example.com</a> в протоколе https;</li>
+        <!--3-->
+        <li>ссылка на <a href="ftp://example.com/file.txt">файл</a> на сервере FTP без авторизации;</li>
+        <!--4-->
+        <li>ссылка на  <a href="ftp://user:password@example.com/file.txt">файл</a> на сервере FTP с авторизацией;</li>
+        <!--5-->
+        <li>ссылка на фрагмент страницы <a href="http://www.example.com/page#about">некоторого сайта</a>;</li>
+        <!--6-->
+        <li>ссылка на фрагмент <a href="#anchor">текущей </a><a id="anchor">страницы</a>;</li>
+        <!--7-->
+        <li>ссылкa с двумя параметрами в URL <a href="http://example.com?a&b">example.com</a>;</li>
+        <!--8-->
+        <li>список ссылок основной навигации сайта с подписями title: 
+            <ul>
+                <li> <a href="https://zoo.com/giraffes" title="подробнее о жирафах">жирафы</a> </li>
+                <li> <a href="https://zoo.com/hippos" title="подробнее о бегемотах">бегемоты</a> </li>
+                <li> <a href="https://zoo.com/lions" title="подробнее о львах">львы</a> </li>
+            </ul>
+        
+        </li>
+        <!--9-->
+        <li>ссылка без href: <a>http://example.com/</a>;</li>
+        <!--10-->
+        <li>ссылка с пустым href: <a href="">example.com</a>;</li>
+        <!--11-->
+        <li><a href="http://example.сom" rel="nofollow">ссылка</a>, по которой запрещен переход поисковикам;</li>
+        <!--12-->
+        <li>ссылка, индексирование которой нужно запретить: <noindex>http://example.com/</noindex>;</li>
+        <!--13-->
+        <li><p><a href="http://example.com/">контекстная ссылка в тексте абзаца</a>;</p></li>
+        <!--14-->
+        <li>
+            ссылка-изображение:
+            <p>
+                <img src="https://s7.pikabu.ru/post_img/big/2014/06/25/10/1403712158_1391014647.jpg" alt="Кот" style="width: 600px" ; />
+            </p>
+        </li>
+        <!--15-->
+        <li>
+            ссылки из прямоугольных и круглых областей картинки (HTML-тег map):
+            <p>
+                <img src="https://pbs.twimg.com/media/EWsYCX9XQAIBP3P.jpg" alt="tehc" style="width: 600px" usemap="#figuri">
+                <map name="figuri">
+                    <area shape="rect" coords="50,50,100,100" href="http://example.com/" alt="прямоугольник">
+                    <area shape="circle" coords="150,15,70" href="http://example.com/" alt="круг">
+                </map>
+            </p>
+        </li>
+        <!--16-->
+        <li><a href="about">относительная ссылка</a> на страницу в текущем каталоге;</li>
+        <!--17-->
+        <li><a href="about/index.html">относительная ссылка</a> на страницу в каталоге about;</li>
+        <!--18-->
+        <li><a href="../index.html">относительная ссылка</a> на страницу в каталоге уровнем выше текущего;</li>
+        <!--19-->
+        <li><a href="../../index.html">относительная ссылка</a> на страницу в каталоге двумя уровнями выше;</li>
+        <!--20-->
+        <li><a href="/">сокращенная ссылка</a> на главную;</li>
+        <!--21-->
+        <li><a href="#my_life">сокращенная ссылка</a> на внутреннюю.</li>
+    </ol>
+
+    <h2> Формы.</h2>
+   
+    <form action="/"
+          method="POST">
+
+        <label>
+            Имя:<br />
+            <input name="field-name-1"
+                   value="Екатерина" />
+        </label><br />
+
+        <label>
+            E-mail:<br />
+            <input name="field-email"
+                   value="ekaterina_veprikova@inbox.ru"
+                   type="email" />
+        </label><br />
+
+        <label>
+            Дата рождения:<br />
+            <input name="field-date"
+                   value="2002-10-25"
+                   type="date" />
+        </label><br />
+
+        Пол:<br />
+        <label>
+            <input type="radio"
+                   name="radio-group-1" value="Значение1" />
+            мужской
+        </label>
+        <label>
+            <input type="radio" checked="checked"
+                   name="radio-group-1" value="Значение2" />
+            женский
+        </label><br />
+
+        Количество конечностей:<br />
+        <label>
+            <input type="radio"
+                   name="radio-group-2" value="Значение1" />
+            2
+        </label>
+        <label>
+            <input type="radio" checked="checked"
+                   name="radio-group-2" value="Значение2" />
+            4
+        </label><br />
+        <label>
+            <input type="radio"
+                   name="radio-group-2" value="Значение3" />
+            другое
+        </label><br />
+
+        <label>
+            Сверхспособности:
+            <br />
+            <select name="superpowers-4[]"
+                    multiple="multiple">
+                <option value="immortality">бессмертие</option>
+                <option value="passing_through_walls">прохождение сквозь стены</option>
+                <option value="levitation">левитация</option>
+            </select>
+        </label><br />
+
+        <label>
+            Биография:<br />
+            <textarea name="field-name-2">студентка ФКТиПМ!!!</textarea>
+        </label><br />
+
+        С контрактом ознакомлен(а)
+        <br />
+        <label>
+            <input type="checkbox" checked="checked"
+                   name="check-1" />
+            да
+        </label><br />
+
+        <input type="submit" value="Отправить" />
+    </form>
+
+</body>
 
 </html>
- 
