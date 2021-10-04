@@ -1,0 +1,55 @@
+#menu {
+    background-color: #c1b9f3;
+    font-family: cursive;
+}
+
+#ssilki, #form{
+    background-color: #c1b9f3;
+    font-family: cursive;
+}
+
+header main, header aside{
+    background-color: #9f91f4;
+    font-family: cursive;
+    height: 100%;
+}
+
+table td, th{
+  border: 2px solid black;
+}
+
+table {
+  width: 100%;
+  font-family: cursive;
+}
+
+.nechet {
+    background-color:#c1b9f3c2;
+}
+
+.chet{
+    background-color:#a599ec;
+}
+
+footer{
+    background-color: #9f91f4;
+    font-family: cursive;
+}
+
+@media screen and (min-width: 800px) {
+    #header {
+      flex-direction: row;
+    }
+
+    #menu {
+        flex-direction: row;
+    }
+
+    #table :nth-child(2){
+        order: 3;
+      }
+      
+    #form :nth-child(3){
+        order: 2;
+      }
+  }
