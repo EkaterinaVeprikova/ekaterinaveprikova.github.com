@@ -37,14 +37,6 @@ footer{
 }
 
 @media screen and (min-width: 800px) {
-    #header {
-      flex-direction: row;
-    }
-
-    #menu {
-        flex-direction: row;
-    }
-
     #table :nth-child(2){
         order: 3;
       }
