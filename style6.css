@@ -1,0 +1,8 @@
+#property, #options{
+  display: none;
+}
+
+#one, #two, #three{
+  background-color: rgb(247, 128, 128);
+}
+
