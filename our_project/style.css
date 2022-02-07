@@ -717,7 +717,7 @@
     top: 16px;
   }
   
-  .reviewss-slider-block{
+  .reviews-slider-block{
     margin-bottom: 160px;
     font-family: Montserrat;
     font-style: normal;
@@ -749,7 +749,7 @@
     width: 100%;
   }
   
-  .reviewss-title{
+  .reviews-title{
       font-weight: bold;
       font-size: 24px;
       margin-bottom: 120px;
@@ -771,7 +771,7 @@
     margin: 0 0 40px;
   }
   
-  .reviewss-item{
+  .reviews-item{
     width: 100%;
     padding: 15px 20px;
     z-index: 10;
@@ -1658,7 +1658,7 @@
     bottom: -60px;
   }
   
-  .reviewss-title{
+  .reviews-title{
     font-size: 32px;
   }
   
@@ -1875,7 +1875,7 @@
     justify-content: center;
   }
   
-  .reviewss-title{
+  .reviews-title{
     font-size: 42px;
   }
   
