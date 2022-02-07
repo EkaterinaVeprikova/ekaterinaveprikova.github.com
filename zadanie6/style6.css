@@ -1,0 +1,17 @@
+body {
+    background-attachment: scroll;
+    background-size: 100% 100%;
+    color: black;
+    font-size: large;
+}
+#logo {
+    width: 150px;
+}
+header {
+    font-size: 50px;
+    font-weight: bold;
+    background-color: rgba(174, 0, 255, 0.315);
+}
+.container, .container-fluid {
+    background-color: rgba(153, 0, 255, 0.315);
+}
