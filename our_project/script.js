@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $('.reviewss-slick-slider').slick({
+  $('.reviews-slick-slider').slick({
     infinite: true,
     speed: 300,
     prevArrow: $("#left-arrow"),
@@ -10,7 +10,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     adaptiveHeight: true
   });
-  $('.reviewss-slick-slider').on('afterChange', function (event, slick, currentSlide) {
+  $('.reviews-slick-slider').on('afterChange', function (event, slick, currentSlide) {
     $('#rev-num').text('0' + (currentSlide + 1))
   });
 
@@ -57,6 +57,7 @@ $(document).ready(function () {
       }
     ]
   });
+
 
   var acc = document.getElementsByClassName("accordion");
   var i;
