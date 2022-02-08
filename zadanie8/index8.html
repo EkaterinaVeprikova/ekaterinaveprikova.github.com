@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+    <head>
+        <meta charset='utf-8'/>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+        <title>Задание 8</title>
+        <link rel="shortcut icon" href="my_icon.png" type="image/png">
+        <meta name='viewport' content='width=device-width, initial-scale=1'/>
+        <link rel="stylesheet" type="text/css" href="style8.css"/>
+    </head>    
+
+    <body>
+        
+        <h3>Веприкова Екатерина,21/2</h3>
+
+            <a href="#" class="button9" id="show_button"> Отправить форму</a>
+
+            <div id="wrapper">
+                <div class="modal_content">
+                    <div class="knopkaX" id="close"></div>
+                    <form id="main_infa" name="main_infa" method="POST" accept-charset="UTF-8">
+                        <label>
+                            Имя: <br/>
+                            <input id="field_name" type="text" name="name" class="fields"/>
+                        </label> 
+                        <br/>  
+                        <label>
+                            Email:<br />
+                            <input name="field_e-mail" value="test@example.com" type="email" class="fields"/>
+                        </label>
+                        <br />
+                        <label>
+                            Сообщение:<br/>
+                            <textarea name="field_msg" class="fields"></textarea>
+                        </label> 
+                        <br/>
+                        <label>
+                            <input name="check" type="checkbox" class="fields"/>
+                            Я даю согласие на обработку моих персональных данных
+                        </label> 
+                        <br/>
+                        <input type="submit" name="subbutton" id="submit_button" disabled/> 
+                    </form>
+                </div>
+            </div>
+
+        <script src="script8.js"></script>
+
+    </body>
+
+</html>
